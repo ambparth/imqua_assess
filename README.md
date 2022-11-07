@@ -31,3 +31,12 @@ Run this code for analysing the FR-IQA metrics on the frames. The metrics are al
 
 Similarly for the NR-IQA methods, the functions are taken from https://github.com/guptapraful/niqe.git and https://github.com/buyizhiyou/NRVQA.git with some minor tweakings. The metrics are also saved in txt file format.
 > python nr_iqa.py
+
+| Method  | PIQUE | BRISQUE | NIQE | PSNR | MSE |
+|---------|-------|---------|------|------|-----|
+|max|63.10|83.4|16.00|55.51|1003.29|
+|min|35.80|48.40|10.20|30.43|0.18|
+|mean|47.85|65.63|13.17|34.29|174.53| 
+|median|**47.40**| **65.80**| **13.20**| **34.03**| **146.51**|
+
+
