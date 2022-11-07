@@ -31,5 +31,5 @@ This metric on the other hand is inspired by the human perception of image asses
 Run this code for analysing the FR-IQA metrics on the frames. The metrics are also saved as text files for a future analysis. 
 >python fr_iqa.py
 
-Similar for the NR-IQA methods, the functions are taken from https://github.com/guptapraful/niqe.git and https://github.com/buyizhiyou/NRVQA.git with some minor tweakings. 
+Similarly for the NR-IQA methods, the functions are taken from https://github.com/guptapraful/niqe.git and https://github.com/buyizhiyou/NRVQA.git with some minor tweakings. The metrics are also saved in txt file format.
 > python nr_iqa.py
