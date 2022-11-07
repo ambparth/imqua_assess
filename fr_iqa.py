@@ -27,8 +27,8 @@ def PSNR(original, compressed):
 ssim_vals = []
 mse_vals = []
 for i in np.arange(len(a1)-1):
-  img1 = plt.imread(frame_path+a[i]); 
-  img2 = plt.imread(frame_path+a[i+1]);
+  img1 = plt.imread(frame_path+a1[i]); 
+  img2 = plt.imread(frame_path+a1[i+1]);
   ssim_img = ssim(img1,img2,data_range = img1.max()-img1.min()) #ssim
   mse_img = mean_squared_error(img1,img2) #mse
   psnr_img = PSNR(img1,img2) # psnr
