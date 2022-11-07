@@ -19,3 +19,17 @@ Coming to the project here, the frames achieved are quantified with the above FR
 The FR-IQA gives a good estimate of the image, but the estimate is done mainly by checking the similarity of the images, which in practical case will not ply as, for istance it will be meaningless to say that blured image is somwhat similar to that of the original image. The other practical aspect to think about is the reference or Ground Truth. Like as discussed in the above paragraph, the ambiguity of ground truth presides. So therefore each and every frame has to be scored. 
 
 ### BRISQUE
+This No-reference quality metric scores the image based on know distortions. Higher the score, lower the quality of image. 
+
+### NIQE
+This metric is trained purely on clean images, yet can classify the images on the quality of it. Lower the score higher the quality. 
+
+### PIQUE
+This metric on the other hand is inspired by the human perception of image assessment. Lower the score, higher is the quality. 
+
+## CODE LAYOUT
+Run this code for analysing the FR-IQA metrics on the frames. The metrics are also saved as text files for a future analysis. 
+>python fr_iqa.py
+
+Similar for the NR-IQA methods, the functions are taken from https://github.com/guptapraful/niqe.git and https://github.com/buyizhiyou/NRVQA.git with some minor tweakings. 
+> python nr_iqa.py
