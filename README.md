@@ -20,7 +20,7 @@ The FR-IQA gives a good estimate of the image, but the estimate is done mainly b
 This No-reference quality metric scores the image based on know distortions. Higher the score, lower the quality of image. 
 
 ### NIQE
-This metric is trained purely on clean images, yet can classify the images on the quality of it. Lower the score higher the quality. 
+This metric is trained purely on clean images, yet has the ability to quantify the image. Lower the score higher the quality. 
 
 ### PIQUE
 This metric on the other hand is inspired by the human perception of image assessment. Lower the score, higher is the quality. 
