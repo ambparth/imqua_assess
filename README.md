@@ -39,4 +39,4 @@ Similarly for the NR-IQA methods, the functions are taken from https://github.co
 |mean|47.85|65.63|13.17|34.29|174.53| 
 |median|**47.40**| **65.80**| **13.20**| **34.03**| **146.51**|
 
-
+The analysed was acquired from the IIT-H Dataset, and it also can be observed that the quality of the frames achieved are fairly good but not great. The next work would be getting the optimum number of frames for analysis using the IQA.
