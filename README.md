@@ -1,5 +1,5 @@
 # Image Quality Estimators for Frames
-As to the continuation of the prior project @yolov5datlab, the next step is to quantify the frames or the images. This is because the volume of data is high and not all of this data is necessary for us. Therefore in order to so, the images or the frames are first quantified on the basis of similarity, noise and the change in the surrounding or addition of a newer object into the surrounding. 
+As to the continuation of the prior project https://github.com/ambparth/yolov5datlab.git, the next step is to quantify the frames or the images. This is because the volume of data is high and not all of this data is necessary for us. Therefore in order to so, the images or the frames are first quantified on the basis of similarity, noise and the change in the surrounding or addition of a newer object into the surrounding. 
 
 ## FR-IQA (Full Reference- Image Quality Assessment)
 In majority cases of quantising images, a particular image is compared with another image which is usually considered as the reference or the ground truth. FR-IQA exploits this approach outputs a score. This score depends on the method that is used.
