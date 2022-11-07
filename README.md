@@ -13,8 +13,6 @@ The mean squared error is one of the common metrics almost in every fields. This
 ### Peak Signal to Noise Ratio (PSNR)
 The peak signal to noise ratio gives information of the quality too, with higher value indicating more information and lesser value indicating that there is noise in the system. This method is infact not a very popular one these days as it does the analysis neither in the patch level nor in the feature level but more importantly in the pixel level. 
 
-Coming to the project here, the frames achieved are quantified with the above FR-IQA methods, with one main assumption. **The frame preceeding the other is considered or assumed as the reference.** This assumption is an arguable statement, especially in the field of autonomous vehicles as there would be multiple frames in one second that can be considered as the reference. Therefore, the idea of NR-IQA (No Reference- Image Quality Assessment) could solve this ambiguity. 
-
 ## NR-IQA (No Reference- Image Quality Assessment)
 The FR-IQA gives a good estimate of the image, but the estimate is done mainly by checking the similarity of the images, which in practical case will not ply as, for istance it will be meaningless to say that blured image is somwhat similar to that of the original image. The other practical aspect to think about is the reference or Ground Truth. Like as discussed in the above paragraph, the ambiguity of ground truth presides. So therefore each and every frame has to be scored. 
 
