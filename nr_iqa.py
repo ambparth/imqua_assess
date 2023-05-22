@@ -14,6 +14,7 @@ import scipy.ndimage
 import numpy as np
 import scipy.special
 import math
+import os
 
 
 #%% All the functions for the NR-IQA are available here. 
@@ -428,20 +429,22 @@ def piqe(im):
         ActivityMask = ActivityMask[0:originalSize[0], 1:originalSize[1]]
 
     return Score, NoticeableArtifactsMask, NoiseMask, ActivityMask
-
+#-----------------------------------------------------------------------------------------------------
 #%% Using NR-IQA (No Reference - Image Quality Assessment); https://github.com/buyizhiyou/NRVQA.git
 # BRISQUE, NIQE, PIQUE
-brisque_vals = []
-niqe_vals = []
-piqe_vals = []
-for j in np.arange(len(a1)):
-  obj = BRISQUE(frame_path+a[j]);
-  brisque_vals.append(obj.score)
-  img1 = np.array(Image.open(frame_path+a[j]).convert('LA'))[:,:,0]
-  niqe_img = nique(img1);
-  niqe_vals.append(niqe_img);
-  piqe_img = piqe(img1);
-  piqe_vals.append(piqe_img); 
+brisque_vals = [] # store the brisque values. 
+niqe_vals = [] # stores the niqe values.
+piqe_vals = [] # stores the piqe values. 
+a1 = os.listdir('path/of/img/here/'); # the list of images in the particular path. 
+for j in np.arange(len(a1)): # for the length of the images. 
+  obj = BRISQUE(frame_path+a1[j]); # compute BRISQUE
+  brisque_vals.append(obj.score) # append the value in the list. 
+  img1 = np.array(Image.open(frame_path+a1[j]).convert('LA'))[:,:,0] # convert the image into an array format
+  niqe_img = nique(img1); # compute nique. 
+  niqe_vals.append(niqe_img); # append the score. 
+  piqe_img = piqe(img1); # compute the pique.
+  piqe_vals.append(piqe_img);  # compute the piqe values. 
+# save all the values in a simple text file. 
 np.savetxt('brisque_vals.txt',brisque_vals)
 np.savetxt('niqe_vals.txt',niqe_vals)
 np.savetxt('piqe_vals.txt',piqe_vals)
