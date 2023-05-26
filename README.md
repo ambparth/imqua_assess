@@ -40,3 +40,16 @@ Similarly for the NR-IQA methods, the functions are taken from https://github.co
 |median|**47.40**| **65.80**| **13.20**| **34.03**| **146.51**|
 
 The analysed was acquired from the IIT-H Dataset, and it also can be observed that the quality of the frames achieved are fairly good but not great. The next work would be getting the optimum number of frames for analysis using the IQA.
+
+### RESULTS
+The following result is being obtained by using BRISQUE, NIQE and PIQE. Note that the data is anlaysed using the one provided by IIT-H. 
+
+<img width="284" alt="brisque_plot" src="https://github.com/ambparth/imqua_assess/assets/45915770/7d83ca87-6ea7-4fb8-9858-af719580b396">
+
+
+<img width="284" alt="niqe_plot" src="https://github.com/ambparth/imqua_assess/assets/45915770/9fb70f2d-1f46-4ae8-8cd3-7c2be7b99f84">
+
+
+<img width="302" alt="PIQE_values_frames" src="https://github.com/ambparth/imqua_assess/assets/45915770/f9f7a3da-1f14-4973-8066-78b31455b6f2">
+
+The analysis using the BRISQUE metric (left), using NIQE (middle) and PIQE (right). It can be observed that there are some subtle variable of each of the frames and the variation is almost constant in the case of NIQE and relatively present in the case of PIQE. 
