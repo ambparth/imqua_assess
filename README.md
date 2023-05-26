@@ -41,7 +41,7 @@ Similarly for the NR-IQA methods, the functions are taken from https://github.co
 
 The analysed was acquired from the IIT-H Dataset, and it also can be observed that the quality of the frames achieved are fairly good but not great. The next work would be getting the optimum number of frames for analysis using the IQA.
 
-### RESULTS
+### RESULTS & FORTHCOMING WORKS
 The following result is being obtained by using BRISQUE, NIQE and PIQE. Note that the data is anlaysed using the one provided by IIT-H. The video duration of the data was roughly 40 minutes, and captured at 20fps. The net frames that is achieved is approximately 35,000 in number. 
 
 <img width="284" alt="brisque_plot" src="https://github.com/ambparth/imqua_assess/assets/45915770/7d83ca87-6ea7-4fb8-9858-af719580b396">
