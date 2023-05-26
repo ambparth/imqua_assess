@@ -41,7 +41,20 @@ Similarly for the NR-IQA methods, the functions are taken from https://github.co
 
 The analysed was acquired from the IIT-H Dataset, and it also can be observed that the quality of the frames achieved are fairly good but not great. The next work would be getting the optimum number of frames for analysis using the IQA.
 
-### RESULTS & FORTHCOMING WORKS
+## RESULTS & FORTHCOMING WORKS
+
+### Full-Reference IQA
+
+The following result is obtained using the Structural Similarity Index (SSIM) and the Mean Squared Error (MSE) and the corresponding Median is also calculated. 
+
+<img width="297" alt="ssim_global frames" src="https://github.com/ambparth/imqua_assess/assets/45915770/26150da8-9951-4b82-998a-bfd74a400a7f">
+
+<img width="311" alt="mse_global frames" src="https://github.com/ambparth/imqua_assess/assets/45915770/02a8623f-f521-4a8f-bfa4-b1b6ad565198">
+
+One of the ambiguity using the FR-IQA is the reference frame (which is assumed to be the preceeding frame here in this analysis). Thus, a better way to quantize the frame is by individually scoring each and every frame. 
+
+### No-Reference IQA
+
 The following result is being obtained by using BRISQUE, NIQE and PIQE. Note that the data is anlaysed using the one provided by IIT-H. The video duration of the data was roughly 40 minutes, and captured at 20fps. The net frames that is achieved is approximately 35,000 in number. 
 
 <img width="284" alt="brisque_plot" src="https://github.com/ambparth/imqua_assess/assets/45915770/7d83ca87-6ea7-4fb8-9858-af719580b396">
