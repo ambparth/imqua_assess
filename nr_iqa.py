@@ -5,6 +5,7 @@ from brisque import BRISQUE
 import numpy as np
 import scipy.misc
 import scipy.io
+import natsort 
 from os.path import dirname
 from os.path import join
 import scipy
@@ -435,7 +436,12 @@ def piqe(im):
 brisque_vals = [] # store the brisque values. 
 niqe_vals = [] # stores the niqe values.
 piqe_vals = [] # stores the piqe values. 
-a1 = os.listdir('path/of/img/here/'); # the list of images in the particular path. 
+
+#%% The directory of the data that is the frames. 
+frame_path = 'PATH/OF/FRAMES/'
+a1 = os.listdir(frame_path)
+a1 = natsort.natsorted(a1) # proper number wise sorting. 
+
 for j in np.arange(len(a1)): # for the length of the images. 
   obj = BRISQUE(frame_path+a1[j]); # compute BRISQUE
   brisque_vals.append(obj.score) # append the value in the list. 
