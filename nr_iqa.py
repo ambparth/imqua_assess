@@ -3,19 +3,18 @@
 # !pip install brisque
 from brisque import BRISQUE 
 import numpy as np
+import scipy
 import scipy.misc
 import scipy.io
+import scipy.ndimage
+import scipy.special
 import natsort 
+import os
 from os.path import dirname
 from os.path import join
-import scipy
 from PIL import Image
-import numpy as np
-import scipy.ndimage
-import numpy as np
-import scipy.special
 import math
-import os
+
 
 
 #%% All the functions for the NR-IQA are available here. 
