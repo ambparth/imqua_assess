@@ -6,7 +6,6 @@ import natsort
 import matplotlib.pyplot as plt
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import mean_squared_error
-from brisque import BRISQUE
 
 #%% The directory of the data that is the frames. 
 frame_path = 'PATH/OF/FRAMES/'
