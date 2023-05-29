@@ -24,17 +24,18 @@ def PSNR(original, compressed):
     psnr = 20 * log10(max_pixel / sqrt(mse))
     return psnr
 
-ssim_vals = []
-mse_vals = []
+#%% Main part of the code starts here. 
+ssim_vals = [] # the ssim values in the list form 
+mse_vals = [] # mean squared error 
 for i in np.arange(len(a1)-1):
-  img1 = plt.imread(frame_path+a1[i]); 
-  img2 = plt.imread(frame_path+a1[i+1]);
+  img1 = plt.imread(frame_path+a1[i]); # read the first frame (assumed as the reference)
+  img2 = plt.imread(frame_path+a1[i+1]); # read the second frame 
   ssim_img = ssim(img1,img2,data_range = img1.max()-img1.min()) #ssim
   mse_img = mean_squared_error(img1,img2) #mse
   psnr_img = PSNR(img1,img2) # psnr
-  ssim_vals.append(ssim_img)
-  mse_vals.append(mse_img)
-  psnr_vals.append(psnr_img)
+  ssim_vals.append(ssim_img) # append the ssim value 
+  mse_vals.append(mse_img) # append the mse value
+  psnr_vals.append(psnr_img) # appaend the psnr value. 
 np.savetxt('ssim_vals.txt',ssim_vals)
 np.savetxt('mse_vals.txt',mse_vals)
 np.savetxt('psnr_vals.txt',psnr_vals)
