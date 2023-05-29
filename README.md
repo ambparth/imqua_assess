@@ -26,6 +26,10 @@ This metric is trained purely on clean images, yet has the ability to quantify t
 This metric on the other hand is inspired by the human perception of image assessment. Lower the score, higher is the quality. 
 
 ## CODE LAYOUT
+
+Firstly, before running the code, it is to be made sure that the python libraries are in place. Run the following code for it. 
+>pip install -r requirements.txt
+
 Run this code for analysing the FR-IQA metrics on the frames. The metrics are also saved as text files for a future analysis. 
 >python fr_iqa.py
 
